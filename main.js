@@ -6,7 +6,7 @@ const quizData = [
     b: "Knee",
     c: "Ankle",
     d: "hinge",
-    correct: "b",
+    correct: "option-b",
   },
   {
     question:
@@ -15,7 +15,7 @@ const quizData = [
     b: "William",
     c: "Adam",
     d: "Iago",
-    correct: "d",
+    correct: "option-d",
   },
   {
     question:
@@ -24,7 +24,7 @@ const quizData = [
     b: "lead",
     c: "Potassium",
     d: "Titanium",
-    correct: "a",
+    correct: "option-a",
   },
   {
     question:
@@ -33,7 +33,7 @@ const quizData = [
     b: "Carrie",
     c: "The Chase",
     d: "Inside Daisy Clover",
-    correct: "a",
+    correct: "option-a",
   },
   {
     question: "How many of Henry VIII's wives were called Catherine?",
@@ -41,7 +41,7 @@ const quizData = [
     b: "2",
     c: "3",
     d: "5",
-    correct: "c",
+    correct: "option-c",
   },
   {
     question: "What was the most popular girls name in the UK in 2019?",
@@ -49,7 +49,7 @@ const quizData = [
     b: "Amelia",
     c: "Isla",
     d: "Ava",
-    correct: "a",
+    correct: "option-a",
   },
   {
     question:
@@ -58,7 +58,7 @@ const quizData = [
     b: "Simeon Amstell",
     c: "Rhod Gilbert",
     d: "Simon Amstell",
-    correct: "d",
+    correct: "option-d",
   },
   {
     question:
@@ -67,7 +67,7 @@ const quizData = [
     b: "Ghost of Tsushima",
     c: "Call of Duty",
     d: "Battlefield",
-    correct: "c",
+    correct: "option-c",
   },
   {
     question: "In what US State is the city Nashville?",
@@ -75,7 +75,7 @@ const quizData = [
     b: "Texas",
     c: "Alabama",
     d: "Alaska",
-    correct: "a",
+    correct: "option-a",
   },
   {
     question: "Which rock band was founded by Trent Reznor in 1988?",
@@ -83,7 +83,7 @@ const quizData = [
     b: "Nine Inch Nails",
     c: "R.E.M",
     d: "Soundgarden",
-    correct: "b",
+    correct: "option-b",
   },
   {
     question: "What is the currency of Denmark?",
@@ -91,7 +91,7 @@ const quizData = [
     b: "Balboas",
     c: "Ringglets",
     d: "Meticals",
-    correct: "a",
+    correct: "option-a",
   },
   {
     question: "Which Tennis Grand Slam is played on a clay surface?",
@@ -99,7 +99,7 @@ const quizData = [
     b: "Hangout Tennis",
     c: "The French Open (Roland Garros)",
     d: "The British standard",
-    correct: "c",
+    correct: "option-c",
   },
   {
     question: "In which European country would you find the Rijksmuseum?",
@@ -107,7 +107,7 @@ const quizData = [
     b: "Russia",
     c: "Germany",
     d: "NetherLands",
-    correct: "d",
+    correct: "option-d",
   },
   {
     question:
@@ -116,7 +116,7 @@ const quizData = [
     b: "Two",
     c: "Five",
     d: "Six",
-    correct: "a",
+    correct: "option-a",
   },
   {
     question:
@@ -125,7 +125,7 @@ const quizData = [
     b: "Marathon",
     c: "Peanuts",
     d: "Nougat",
-    correct: "b",
+    correct: "option-b",
   },
 ];
 const quiz = document.querySelector(".container");
@@ -138,7 +138,7 @@ const optionFour = document.querySelector("#label-d");
 const nextQues = document.querySelector(".next");
 
 let currentQuiz = 0;
-let Score = 0;
+let score = 0;
 
 loadQuiz();
 function loadQuiz() {
@@ -168,13 +168,13 @@ nextQues.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {
     if (answer === quizData[currentQuiz].correct) {
-      Score++;
+      score++;
     }
     currentQuiz++;
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `Thanks for participating you answered ${Score} correctly out of ${quizData.length}
+      quiz.innerHTML = `Thanks for participating you answered ${score} correctly out of ${quizData.length}
         <button class="reload" onclick= 'location.reload()'>Reload</button>`;
     }
   }

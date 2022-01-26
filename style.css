@@ -97,10 +97,17 @@ label:hover {
   transition: 0.6s ease-in;
   transform: scale(1.1);
 }
-@media screen and (max-width: 700px){
-  .container{
+@media screen and (max-width: 700px) {
+  .container {
     height: 400px;
     width: 400px;
     font-size: 16px;
+  }
+  .options {
+    flex-direction: column;
+    text-align: left;
+  }
+  .reload {
+    margin: 60px auto;
   }
 }
