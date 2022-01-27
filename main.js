@@ -1,7 +1,7 @@
 const quizData = [
   {
     question:
-      "In which part of your body would you find the cruciate ligament?",
+      "1. In which part of your body would you find the cruciate ligament?",
     a: "Elbow",
     b: "Knee",
     c: "Ankle",
@@ -10,7 +10,7 @@ const quizData = [
   },
   {
     question:
-      "What is the name of the main antagonist in the Shakespeare play Othello?",
+      "2. What is the name of the main antagonist in the Shakespeare play Othello?",
     a: "Togo",
     b: "William",
     c: "Adam",
@@ -19,7 +19,7 @@ const quizData = [
   },
   {
     question:
-      "What element is denoted by the chemical symbol Sn in the periodic table?",
+      "3. What element is denoted by the chemical symbol Sn in the periodic table?",
     a: "Tin",
     b: "lead",
     c: "Potassium",
@@ -28,7 +28,7 @@ const quizData = [
   },
   {
     question:
-      "What is the name of the 1976 film about the Watergate scandal, starring Robert Redford and Dustin Hoffman?",
+      "4. What is the name of the 1976 film about the Watergate scandal, starring Robert Redford and Dustin Hoffman?",
     a: "All the President's Men",
     b: "Carrie",
     c: "The Chase",
@@ -36,7 +36,7 @@ const quizData = [
     correct: "option-a",
   },
   {
-    question: "How many of Henry VIII's wives were called Catherine?",
+    question: "5. How many of Henry VIII's wives were called Catherine?",
     a: "4",
     b: "2",
     c: "3",
@@ -44,7 +44,7 @@ const quizData = [
     correct: "option-c",
   },
   {
-    question: "What was the most popular girls name in the UK in 2019?",
+    question: "6. What was the most popular girls name in the UK in 2019?",
     a: "Olivia",
     b: "Amelia",
     c: "Isla",
@@ -53,7 +53,7 @@ const quizData = [
   },
   {
     question:
-      "Which comedian was the second permanent host of Never Mind the Buzzcocks after Mark Lamarr?",
+      "7. Which comedian was the second permanent host of Never Mind the Buzzcocks after Mark Lamarr?",
     a: "Rodd Gilbert",
     b: "Simeon Amstell",
     c: "Rhod Gilbert",
@@ -62,7 +62,7 @@ const quizData = [
   },
   {
     question:
-      "Which popular video game franchise has released games with the subtitles World At War and Black Ops?",
+      "8. Which popular video game franchise has released games with the subtitles World At War and Black Ops?",
     a: "Halo Infinite",
     b: "Ghost of Tsushima",
     c: "Call of Duty",
@@ -70,7 +70,7 @@ const quizData = [
     correct: "option-c",
   },
   {
-    question: "In what US State is the city Nashville?",
+    question: "9. In what US State is the city Nashville?",
     a: "Tennessee",
     b: "Texas",
     c: "Alabama",
@@ -78,7 +78,7 @@ const quizData = [
     correct: "option-a",
   },
   {
-    question: "Which rock band was founded by Trent Reznor in 1988?",
+    question: "10. Which rock band was founded by Trent Reznor in 1988?",
     a: "Nirvana",
     b: "Nine Inch Nails",
     c: "R.E.M",
@@ -86,7 +86,7 @@ const quizData = [
     correct: "option-b",
   },
   {
-    question: "What is the currency of Denmark?",
+    question: "11. What is the currency of Denmark?",
     a: "Krone",
     b: "Balboas",
     c: "Ringglets",
@@ -94,7 +94,7 @@ const quizData = [
     correct: "option-a",
   },
   {
-    question: "Which Tennis Grand Slam is played on a clay surface?",
+    question: "12. Which Tennis Grand Slam is played on a clay surface?",
     a: "Tennis court",
     b: "Hangout Tennis",
     c: "The French Open (Roland Garros)",
@@ -102,7 +102,7 @@ const quizData = [
     correct: "option-c",
   },
   {
-    question: "In which European country would you find the Rijksmuseum?",
+    question: "13. In which European country would you find the Rijksmuseum?",
     a: "United Kingdom",
     b: "Russia",
     c: "Germany",
@@ -111,7 +111,7 @@ const quizData = [
   },
   {
     question:
-      "How many films have Al Pacino and Robert De Niro appeared in together?",
+      "14. How many films have Al Pacino and Robert De Niro appeared in together?",
     a: "Four",
     b: "Two",
     c: "Five",
@@ -120,7 +120,7 @@ const quizData = [
   },
   {
     question:
-      "What was the old name for a Snickers bar before it changed in 1990?",
+      "15. What was the old name for a Snickers bar before it changed in 1990?",
     a: "Caramel",
     b: "Marathon",
     c: "Peanuts",
@@ -174,7 +174,7 @@ nextQues.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `Thanks for participating you answered ${score} correctly out of ${quizData.length}
+      quiz.innerHTML = `Thanks for participating you answered ${score} correctly out of ${quizData.length}<br>
         <button class="reload" onclick= 'location.reload()'>Reload</button>`;
     }
   }

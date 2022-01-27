@@ -108,6 +108,11 @@ label:hover {
     text-align: left;
   }
   .reload {
-    margin: 60px auto;
+    margin: 40px auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 350px;
   }
 }
